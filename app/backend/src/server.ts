@@ -1,5 +1,5 @@
-const express = require('express');
-const cors = require('cors');
+import express, { Request, Response } from 'express';
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -7,19 +7,19 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to the Home Page');
 });
 
-app.get('/visualization', (req, res) => {
+app.get('/visualization', (req: Request, res: Response) => {
     res.send('Welcome to the Visualization Page');
 });
 
-app.get('/trading-strategy', (req, res) => {
+app.get('/trading-strategy', (req: Request, res: Response) => {
     res.send('Welcome to the Trading Strategy Page');
 });
 
-app.get('/about', (req, res) => {
+app.get('/about', (req: Request, res: Response) => {
     res.send('Welcome to the About Page');
 });
 

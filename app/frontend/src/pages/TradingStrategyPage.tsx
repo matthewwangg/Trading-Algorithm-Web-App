@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const VisualizationPage = () => {
-    const [data, setData] = useState('');
+const TradingStrategyPage: React.FC = () => {
+    const [data, setData] = useState<string>('');
 
     useEffect(() => {
-        axios.get('http://localhost:5000/visualization')
+        axios.get('http://localhost:5000/trading-strategy')
             .then(response => {
                 setData(response.data);
             })
@@ -16,10 +16,10 @@ const VisualizationPage = () => {
 
     return (
         <div>
-            <h1>Visualization Page</h1>
+            <h1>Trading Strategy Page</h1>
             <p>{data}</p>
         </div>
     );
 };
 
-export default VisualizationPage;
+export default TradingStrategyPage;

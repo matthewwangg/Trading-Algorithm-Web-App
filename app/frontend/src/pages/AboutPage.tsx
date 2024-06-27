@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const HomePage = () => {
-    const [data, setData] = useState('');
+const AboutPage: React.FC = () => {
+    const [data, setData] = useState<string>('');
 
     useEffect(() => {
-        axios.get('http://localhost:5000/')
+        axios.get('http://localhost:5000/about')
             .then(response => {
                 setData(response.data);
             })
@@ -16,10 +16,10 @@ const HomePage = () => {
 
     return (
         <div>
-            <h1>Home Page</h1>
+            <h1>About Page</h1>
             <p>{data}</p>
         </div>
     );
 };
 
-export default HomePage;
+export default AboutPage;
