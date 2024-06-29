@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import VisualizationPage from './pages/VisualizationPage';
-import TradingStrategyPage from './pages/TradingStrategyPage';
+import MetricsPage from './pages/MetricsPage';
+import PredictionsPage from './pages/PredictionsPage';
 import AboutPage from './pages/AboutPage';
 
 const App: React.FC = () => {
@@ -10,8 +10,8 @@ const App: React.FC = () => {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/visualization" element={<VisualizationPage />} />
-          <Route path="/trading-strategy" element={<TradingStrategyPage />} />
+          <Route path="/metrics" element={<MetricsPage />} />
+          <Route path="/predictions" element={<PredictionsPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Router>

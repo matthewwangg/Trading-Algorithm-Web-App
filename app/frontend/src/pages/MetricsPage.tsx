@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from "../components/Navbar";
 
-const TradingStrategyPage: React.FC = () => {
+const MetricsPage: React.FC = () => {
     const [data, setData] = useState<string>('');
 
     useEffect(() => {
-        axios.get('http://localhost:5000/trading-strategy')
+        axios.get('http://localhost:5000/visualization')
             .then(response => {
                 setData(response.data);
             })
@@ -16,10 +17,11 @@ const TradingStrategyPage: React.FC = () => {
 
     return (
         <div>
-            <h1>Trading Strategy Page</h1>
+            <Navbar/>
+            <h1>Visualization Page</h1>
             <p>{data}</p>
         </div>
     );
 };
 
-export default TradingStrategyPage;
+export default MetricsPage;

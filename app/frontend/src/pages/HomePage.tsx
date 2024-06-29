@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from "../components/Navbar";
 
 const HomePage: React.FC = () => {
     const [data, setData] = useState<string>('');
@@ -16,6 +17,7 @@ const HomePage: React.FC = () => {
 
     return (
         <div>
+            <Navbar/>
             <h1>Home Page</h1>
             <p>{data}</p>
         </div>
