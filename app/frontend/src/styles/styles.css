@@ -1,0 +1,103 @@
+/* src/components/WelcomeSection.css */
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.welcome-content {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.welcome-content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.welcome-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.get-started-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-started-button:hover {
+    background-color: #333;
+}
+
+.welcome-image-placeholder {
+    flex-grow: 1;
+    background-color: #ccc;
+    height: 300px;
+    margin-left: -10px;
+    margin-right: 20px;
+    width: calc(40% - 20px);
+    box-sizing: border-box;
+}
+
+/* src/components/HeaderSection.css */
+
+.header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    font-size: 24px;
+}
+
+.centered-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.centered-button:hover {
+    background-color: #333;
+}
+
+/* src/components/HeaderTextSection.css */
+.header-text-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-text-section-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.centered-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.centered-button:hover {
+    background-color: #333;
+}
+

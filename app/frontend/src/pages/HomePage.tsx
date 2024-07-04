@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from "../components/Navbar";
+import WelcomeSection from "../components/WelcomeSection";
+import HeaderSection from "../components/HeaderSection";
+import HeaderTextSection from "../components/HeaderTextSection";
 
 const HomePage: React.FC = () => {
     const [data, setData] = useState<string>('');
@@ -18,8 +21,9 @@ const HomePage: React.FC = () => {
     return (
         <div>
             <Navbar/>
-            <h1>Home Page</h1>
-            <p>{data}</p>
+            <WelcomeSection/>
+            <HeaderSection headerText={"Predictions History"} buttonText={"View All"} />
+            <HeaderTextSection headerText={"Stock Performance Metrics"} middleText={"Key performance indicators for trading."} buttonText={"View Metrics"}/>
         </div>
     );
 };

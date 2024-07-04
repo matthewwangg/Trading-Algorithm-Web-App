@@ -11,12 +11,12 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to the Home Page');
 });
 
-app.get('/visualization', (req: Request, res: Response) => {
-    res.send('Welcome to the Visualization Page');
+app.get('/metrics', (req: Request, res: Response) => {
+    res.send('Welcome to the Metrics Page');
 });
 
-app.get('/trading-strategy', (req: Request, res: Response) => {
-    res.send('Welcome to the Trading Strategy Page');
+app.get('/predictions', (req: Request, res: Response) => {
+    res.send('Welcome to the Predictions Page');
 });
 
 app.get('/about', (req: Request, res: Response) => {
