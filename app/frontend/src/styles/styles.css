@@ -1,5 +1,4 @@
 /* src/components/WelcomeSection.css */
-
 .welcome-section {
     display: flex;
     justify-content: space-between;
@@ -50,7 +49,6 @@
 }
 
 /* src/components/HeaderSection.css */
-
 .header-section {
     text-align: center;
     margin-bottom: 20px;
@@ -100,4 +98,131 @@
 .centered-button:hover {
     background-color: #333;
 }
+
+/* src/components/InfoCard.css */
+.info-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.info-card-image,
+.info-card-placeholder {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.info-card-placeholder {
+    background-color: grey;
+}
+
+.info-card-content {
+    flex: 1;
+}
+
+.info-card-header {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.info-card-paragraph {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* src/components/InfoCardSection.css */
+.info-card-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* src/components/MetricCard.css */
+.metric-card {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.metric-card-grey-text {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.metric-card-header {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.metric-card-paragraph {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* src/components/MetricCardSection.css */
+.metric-card-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* src/components/StockGraphCard.css */
+.stock-graph-card {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%; /* Adjust the width as needed */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    display: flex;
+    flex-direction: column;
+}
+
+.stock-graph-card-header {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.stock-graph-card-paragraph {
+    color: grey;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+
+.stock-graph-placeholder {
+    background-color: lightgrey;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed grey;
+    min-height: 200px; 
+}
+
+/* src/components/StockGraphCardContainer.css */
+.stock-graph-card-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
 
