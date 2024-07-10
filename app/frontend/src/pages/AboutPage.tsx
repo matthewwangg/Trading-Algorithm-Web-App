@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from "../components/Navbar";
+import FooterSection from "../components/FooterSection";
 
 const AboutPage: React.FC = () => {
     const [data, setData] = useState<string>('');
@@ -20,6 +21,7 @@ const AboutPage: React.FC = () => {
             <Navbar/>
             <h1>About Page</h1>
             <p>{data}</p>
+            <FooterSection />
         </div>
     );
 };

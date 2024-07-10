@@ -7,6 +7,8 @@ import HeaderTextSection from "../components/HeaderTextSection";
 import InfoCardSection from "../components/InfoCardSection";
 import MetricCardSection from "../components/MetricCardSection";
 import StockGraphCardSection from "../components/StockGraphCardSection";
+import FooterSection from "../components/FooterSection";
+import CollaboratorCard from "../components/CollaboratorCard";
 
 const HomePage: React.FC = () => {
     const [data, setData] = useState<string>('');
@@ -40,6 +42,22 @@ const HomePage: React.FC = () => {
         paragraphText: ""
     };
 
+    const firstCollaboratorCard = {
+        name: "Collaborator 1",
+        role1: "Role 1",
+        role2: "Role 2",
+        description: "Description",
+        buttonText: "View Profile"
+    };
+
+    const secondCollaboratorCard = {
+        name: "Collaborator 2",
+        role1: "Role 1",
+        role2: "Role 2",
+        description: "Description",
+        buttonText: "View Profile"
+    };
+
     useEffect(() => {
         axios.get('http://localhost:5000/')
             .then(response => {
@@ -59,6 +77,21 @@ const HomePage: React.FC = () => {
             <HeaderTextSection headerText={"Stock Performance Metrics"} middleText={"Key performance indicators for trading."} buttonText={"View Metrics"}/>
             <MetricCardSection firstCard={firstMetricCard} secondCard={secondMetricCard} thirdCard={thirdMetricCard}/>
             <StockGraphCardSection headerText={"Stock Name"} paragraphText={"Current Value"}/>
+            <CollaboratorCard
+                name={firstCollaboratorCard.name}
+                role1={firstCollaboratorCard.role1}
+                role2={firstCollaboratorCard.role2}
+                description={firstCollaboratorCard.description}
+                buttonText={firstCollaboratorCard.buttonText}
+            />
+            <CollaboratorCard
+                name={secondCollaboratorCard.name}
+                role1={secondCollaboratorCard.role1}
+                role2={secondCollaboratorCard.role2}
+                description={secondCollaboratorCard.description}
+                buttonText={secondCollaboratorCard.buttonText}
+            />
+            <FooterSection />
         </div>
     );
 };

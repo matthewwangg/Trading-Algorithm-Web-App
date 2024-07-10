@@ -221,6 +221,102 @@
     margin: 0 auto;
 }
 
+/* src/components/FooterSection.css */
+.footer-section {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* src/components/CollaboratorCard.css */
+.collaborator-card {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.collaborator-photo {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.collaborator-content {
+    display: flex;
+    align-items: center;
+    width: 60%; 
+    margin-left: 20px;
+}
+
+.collaborator-info {
+    flex-grow: 1;
+}
+
+.collaborator-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.collaborator-roles {
+    margin: 10px 0;
+}
+
+.role-box {
+    display: inline-block;
+    background-color: #d3d3d3;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.collaborator-info p {
+    margin: 10px 0;
+}
+
+.view-profile-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.view-profile-button:hover {
+    background-color: #333;
+}
+
 
 
 
