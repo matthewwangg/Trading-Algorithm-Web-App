@@ -1,7 +1,7 @@
 /* src/components/WelcomeSection.css */
 .welcome-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 50px;
@@ -11,11 +11,11 @@
 
 .welcome-content {
     flex-grow: 1;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .welcome-content h1 {
-    font-size: 32px;
+    font-size: 37px;
     margin-bottom: 15px;
 }
 
@@ -25,8 +25,8 @@
 }
 
 .get-started-button {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 12px 24px;
+    font-size: 16px;
     background-color: #000;
     color: white;
     border: none;
@@ -39,12 +39,11 @@
 }
 
 .welcome-image-placeholder {
-    flex-grow: 1;
+    flex-grow: 0.5;
     background-color: #ccc;
     height: 300px;
-    margin-left: -10px;
-    margin-right: 20px;
-    width: calc(40% - 20px);
+    margin-left: 20px;
+    width: 30%;
     box-sizing: border-box;
 }
 
@@ -55,12 +54,12 @@
 }
 
 .header-text {
-    font-size: 24px;
+    font-size: 29px;
 }
 
 .centered-button {
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     background-color: #000;
     color: white;
@@ -86,7 +85,7 @@
 
 .centered-button {
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     background-color: #000;
     color: white;
@@ -129,7 +128,7 @@
 }
 
 .info-card-header {
-    font-size: 18px;
+    font-size: 23px;
     margin: 0 0 10px;
 }
 
@@ -164,7 +163,7 @@
 }
 
 .metric-card-header {
-    font-size: 18px;
+    font-size: 23px;
     margin: 0 0 10px;
 }
 
@@ -188,14 +187,14 @@
     padding: 20px;
     border-radius: 5px;
     margin: 10px;
-    width: 100%; /* Adjust the width as needed */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
 .stock-graph-card-header {
-    font-size: 18px;
+    font-size: 23px;
     margin: 0 0 10px;
 }
 
@@ -212,7 +211,7 @@
     align-items: center;
     justify-content: center;
     border: 1px dashed grey;
-    min-height: 200px; 
+    min-height: 200px;
 }
 
 /* src/components/StockGraphCardContainer.css */
@@ -273,7 +272,7 @@
 .collaborator-content {
     display: flex;
     align-items: center;
-    width: 60%; 
+    width: 60%;
     margin-left: 20px;
 }
 
@@ -283,7 +282,7 @@
 
 .collaborator-info h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 29px;
 }
 
 .collaborator-roles {
@@ -306,7 +305,7 @@
 .view-profile-button {
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -316,9 +315,3 @@
 .view-profile-button:hover {
     background-color: #333;
 }
-
-
-
-
-
-
