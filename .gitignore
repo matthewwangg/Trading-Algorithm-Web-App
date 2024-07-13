@@ -38,6 +38,7 @@ node_modules/
 # Backend-specific
 /backend/node_modules/
 /backend/.env
+/backend/src/Dataset
 
 # Ignore generated lock files
 package-lock.json
@@ -52,6 +53,10 @@ yarn.lock
 *.sln
 *.swp
 *~
+*.pyc
+*.sqlite3
+*.log
+*.csv
 
 # Miscellaneous
 Thumbs.db

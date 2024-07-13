@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Analysis</title>
+</head>
+<body>
+    <h1>Stock Analysis</h1>
+    <form method="get" action=".">
+        <label for="ticker">Choose a stock:</label>
+        <select name="ticker" id="ticker">
+            <option value="AAPL">Apple (AAPL)</option>
+            <option value="ABBV">AbbVie (ABBV)</option>
+            <option value="ABC">AmerisourceBergen (ABC)</option>
+            <option value="ABT">Abbott Laboratories (ABT)</option>
+            <option value="ACN">Accenture (ACN)</option>
+            <option value="ADBE">Adobe (ADBE)</option>
+            <option value="ADI">Analog Devices (ADI)</option>
+            <option value="ADM">Archer-Daniels-Midland (ADM)</option>
+            <option value="ADP">Automatic Data Processing (ADP)</option>
+            <option value="ADSK">Autodesk (ADSK)</option>
+            <option value="AMAT">Applied Materials (AMAT)</option>
+            <option value="AMD">Advanced Micro Devices (AMD)</option>
+            <option value="AME">AMETEK (AME)</option>
+            <option value="AMGN">Amgen (AMGN)</option>
+            <option value="AMP">Ameriprise Financial (AMP)</option>
+            <option value="AMT">American Tower (AMT)</option>
+            <option value="ANET">Arista Networks (ANET)</option>
+            <option value="ANSS">ANSYS (ANSS)</option>
+            <option value="AON">Aon (AON)</option>
+            <option value="AOS">A. O. Smith (AOS)</option>
+            <option value="APA">APA Corporation (APA)</option>
+            <option value="APH">Amphenol (APH)</option>
+            <option value="APTV">Aptiv (APTV)</option>
+            <option value="ARE">Alexandria Real Estate Equities (ARE)</option>
+            <option value="ATVI">Activision Blizzard (ATVI)</option>
+            <option value="AVB">AvalonBay Communities (AVB)</option>
+            <option value="AVGO">Broadcom (AVGO)</option>
+            <option value="AVY">Avery Dennison (AVY)</option>
+            <option value="AWK">American Water Works (AWK)</option>
+            <option value="AZO">AutoZone (AZO)</option>
+            <option value="BA">Boeing (BA)</option>
+            <option value="BAC">Bank of America (BAC)</option>
+            <option value="BALL">Ball Corporation (BALL)</option>
+            <option value="BAX">Baxter International (BAX)</option>
+            <option value="BBWI">Bath & Body Works (BBWI)</option>
+            <option value="BBY">Best Buy (BBY)</option>
+            <option value="BDX">Becton Dickinson (BDX)</option>
+            <option value="BF.B">Brown-Forman (BF.B)</option>
+            <option value="BIIB">Biogen (BIIB)</option>
+            <option value="BIO">Bio-Rad Laboratories (BIO)</option>
+            <option value="BK">Bank of New York Mellon (BK)</option>
+            <option value="BKNG">Booking Holdings (BKNG)</option>
+            <option value="BKR">Baker Hughes (BKR)</option>
+            <option value="BLK">BlackRock (BLK)</option>
+            <option value="BMY">Bristol-Myers Squibb (BMY)</option>
+            <option value="BR">Broadridge Financial Solutions (BR)</option>
+            <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+            <option value="BRO">Brown & Brown (BRO)</option>
+            <option value="BSX">Boston Scientific (BSX)</option>
+            <option value="BWA">BorgWarner (BWA)</option>
+            <option value="BXP">Boston Properties (BXP)</option>
+            <option value="C">Citigroup (C)</option>
+            <option value="CAH">Cardinal Health (CAH)</option>
+            <option value="CARR">Carrier Global (CARR)</option>
+            <option value="CAT">Caterpillar (CAT)</option>
+            <option value="CB">Chubb (CB)</option>
+            <option value="CBOE">Cboe Global Markets (CBOE)</option>
+            <option value="CBRE">CBRE Group (CBRE)</option>
+            <option value="CCL">Carnival (CCL)</option>
+            <option value="CDNS">Cadence Design Systems (CDNS)</option>
+            <option value="CDW">CDW (CDW)</option>
+            <option value="CE">Celanese (CE)</option>
+            <option value="CERN">Cerner (CERN)</option>
+            <option value="CF">CF Industries (CF)</option>
+            <option value="CFG">Citizens Financial Group (CFG)</option>
+            <option value="CHD">Church & Dwight (CHD)</option>
+            <option value="CHRW">C.H. Robinson (CHRW)</option>
+            <option value="CHTR">Charter Communications (CHTR)</option>
+            <option value="CI">Cigna (CI)</option>
+            <option value="CINF">Cincinnati Financial (CINF)</option>
+            <option value="CL">Colgate-Palmolive (CL)</option>
+            <option value="CLX">Clorox (CLX)</option>
+            <option value="CMA">Comerica (CMA)</option>
+            <option value="CMCSA">Comcast (CMCSA)</option>
+            <option value="CME">CME Group (CME)</option>
+            <option value="CMG">Chipotle Mexican Grill (CMG)</option>
+            <option value="CMS">CMS Energy (CMS)</option>
+            <option value="CNC">Centene (CNC)</option>
+            <option value="CNP">CenterPoint Energy (CNP)</option>
+            <option value="COF">Capital One (COF)</option>
+            <option value="COG">Cabot Oil & Gas (COG)</option>
+            <option value="CPB">Campbell Soup (CPB)</option>
+            <option value="CRL">Charles River Laboratories (CRL)</option>
+            <option value="CSCO">Cisco Systems (CSCO)</option>
+            <option value="CTAS">Cintas (CTAS)</option>
+            <option value="CTLT">Catalent (CTLT)</option>
+            <option value="CTSH">Cognizant (CTSH)</option>
+            <option value="CVX">Chevron (CVX)</option>
+            <option value="CZR">Caesars Entertainment (CZR)</option>
+            <option value="KMX">CarMax (KMX)</option>
+            <option value="KO">Coca-Cola (KO)</option>
+            <option value="MMM">3M (MMM)</option>
+            <option value="SCHW">Charles Schwab (SCHW)</option>
+            <option value="TECH">Bio-Techne (TECH)</option>
+            <!-- Add more options as needed -->
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Moving Averages</h2>
+    <img src="data:image/png;base64,{{ image1_base64 }}" alt="Moving Averages Plot">
+
+    <h2>Decomposed Components</h2>
+    <img src="data:image/png;base64,{{ image2_base64 }}" alt="Decomposed Components Plot">
+
+    <h2>ARIMA Forecast</h2>
+    <img src="data:image/png;base64,{{ image3_base64 }}" alt="ARIMA Forecast Plot">
+</body>
+</html>
