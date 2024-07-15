@@ -4,7 +4,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima.model import ARIMA
 
 # Load the data
-file_path = f'/Users/hari/ASU Dropbox/Hari Varshan Dharmendra Mohan Prabu/Mac/Desktop/Personal Project/Trading-Engine-Web-App/app/backend/src/Dataset/APPL_data.csv'
+file_path = f'/Users/hari/ASU Dropbox/Hari Varshan Dharmendra Mohan Prabu/Mac/Desktop/Personal Project/Trading-Engine-Web-App/app/backend/src/Dataset/APPL_data.csv' # change data source accordingly
 data = pd.read_csv(file_path, index_col='Date', parse_dates=True)
 data = data.asfreq('B') # Set the frequency of the date index
 
