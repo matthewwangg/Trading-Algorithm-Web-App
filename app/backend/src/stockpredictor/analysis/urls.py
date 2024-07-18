@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from .views import stock_analysis  
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('api/stockpredict', stock_analysis, name='api_stockpredict'),  
 ]
