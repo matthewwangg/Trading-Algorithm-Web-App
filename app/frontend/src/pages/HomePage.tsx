@@ -9,6 +9,8 @@ import MetricCardSection from "../components/MetricCardSection";
 import StockGraphCardSection from "../components/StockGraphCardSection";
 import FooterSection from "../components/FooterSection";
 import CollaboratorCard from "../components/CollaboratorCard";
+import SubscriptionSection from "../components/SubscriptionSection";
+import TableSection from "../components/TableSection";
 
 const HomePage: React.FC = () => {
     const [data, setData] = useState<string>('');
@@ -77,6 +79,8 @@ const HomePage: React.FC = () => {
             <HeaderTextSection headerText={"Stock Performance Metrics"} middleText={"Key performance indicators for trading."} buttonText={"View Metrics"}/>
             <MetricCardSection firstCard={firstMetricCard} secondCard={secondMetricCard} thirdCard={thirdMetricCard}/>
             <StockGraphCardSection headerText={"Stock Name"} paragraphText={"Current Value"}/>
+            <TableSection/>
+            <SubscriptionSection/>
             <CollaboratorCard
                 name={firstCollaboratorCard.name}
                 role1={firstCollaboratorCard.role1}

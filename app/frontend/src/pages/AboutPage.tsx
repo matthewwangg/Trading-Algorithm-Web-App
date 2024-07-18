@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from "../components/Navbar";
 import FooterSection from "../components/FooterSection";
+import ProfileCard from "../components/ProfileCard";
+import ProjectSection from "../components/ProjectSection";
 
 const AboutPage: React.FC = () => {
     const [data, setData] = useState<string>('');
@@ -19,8 +21,24 @@ const AboutPage: React.FC = () => {
     return (
         <div>
             <Navbar/>
-            <h1>About Page</h1>
-            <p>{data}</p>
+            <ProfileCard
+                name="Test"
+                role1="?"
+                role2="?"
+                description="?"
+                contactText="Contact"
+                githubText="GitHub"
+            />
+            <ProjectSection/>
+            <ProfileCard
+                name="Test"
+                role1="?"
+                role2="?"
+                description="?"
+                contactText="Contact"
+                githubText="GitHub"
+            />
+            <ProjectSection/>
             <FooterSection />
         </div>
     );

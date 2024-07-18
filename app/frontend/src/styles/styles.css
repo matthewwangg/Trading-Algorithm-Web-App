@@ -315,3 +315,362 @@
 .view-profile-button:hover {
     background-color: #333;
 }
+
+/* src/components/SubscriptionSection.css */
+.subscription-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.subscription-content {
+    flex: 1;
+    max-width: 45%;
+    padding-right: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscription-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.subscription-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    flex: 1;
+    max-width: 45%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subscription-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.subscription-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #333;
+}
+
+/* src/components/ProfileCard.css */
+.profile-card {
+    display: flex;
+    background-color: #777;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.profile-roles {
+    margin: 10px 0;
+}
+
+.role-box {
+    display: inline-block;
+    background-color: #d3d3d3;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    color: white;
+}
+
+.profile-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-button {
+    background-color: #777;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #888;
+}
+
+.github-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.github-button:hover {
+    background-color: #222;
+}
+
+/* src/components/PhotoSection.css */
+
+.photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.photo-placeholder {
+    width: 80%;
+    height: 400px;
+    background-color: #f0f0f0;
+}
+
+/* src/components/PredictionSection.css */
+.prediction-section {
+    background-color: #777;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.prediction-header {
+    color: white;
+    background-color: transparent;
+    padding: 0 20px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 0;
+    font-size: 29px;
+}
+
+.prediction-input {
+    width: 40%;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+/* src/components/TableSection.css */
+
+.table-section {
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.table-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.data-table th {
+    background-color: #ddd;
+}
+
+.data-table td {
+    background-color: white;
+}
+
+.data-table th, .data-table td {
+    text-align: center;
+}
+
+/* src/components/ProjectSection.css */
+.project-section {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.project-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-details {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.detail-text {
+    text-align: center;
+}
+
+.detail-text h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.detail-text p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 400px;
+    height: 400px;
+    background-color: lightgrey;
+    object-fit: cover;
+}
+
+/* src/components/StockSection.css */
+.stock-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px 50px 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.stock-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.detail-text {
+    text-align: center;
+}
+
+.detail-text h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.detail-text p {
+    margin: 5px 0;
+    font-size: 14px;
+}
