@@ -9,10 +9,10 @@ const MetricsPage: React.FC = () => {
     const [data, setData] = useState<string>('');
 
     const firstCollaboratorCard = {
-        name: "Collaborator 1",
-        role1: "Role 1",
-        role2: "Role 2",
-        description: "Description",
+        name: "Matthew Wang",
+        role1: "Computer Science",
+        role2: "AI/ML Engineering Intern",
+        description: "Incoming CS Senior @ ASU",
         buttonText: "View Profile"
     };
 

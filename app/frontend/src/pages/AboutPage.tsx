@@ -22,10 +22,10 @@ const AboutPage: React.FC = () => {
         <div>
             <Navbar/>
             <ProfileCard
-                name="Test"
-                role1="?"
-                role2="?"
-                description="?"
+                name="Matthew Wang"
+                role1="Computer Science"
+                role2="AI/ML Engineering Intern"
+                description="Incoming CS Senior @ ASU"
                 contactText="Contact"
                 githubText="GitHub"
             />
