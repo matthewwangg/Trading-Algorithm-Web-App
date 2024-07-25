@@ -204,6 +204,13 @@
     margin: 0 0 20px;
 }
 
+.stock-graph-card-paragraph-2 {
+    color: grey;
+    font-size: 14px;
+    margin: 20px 0 0;
+    text-align: right;
+}
+
 .stock-graph-placeholder {
     background-color: lightgrey;
     flex-grow: 1;

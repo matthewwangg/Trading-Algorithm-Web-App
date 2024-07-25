@@ -18,15 +18,15 @@ const PredictionsPage: React.FC = () => {
 
     const stockData = [
         { name: 'MSFT', price: '?' },
-        { name: 'GOOGL', price: '?' },
+        { name: 'GOOG', price: '?' },
         { name: 'AMZN', price: '?' }
     ];
 
     const firstCollaboratorCard = {
-        name: "Collaborator 1",
-        role1: "Role 1",
-        role2: "Role 2",
-        description: "Description",
+        name: "Matthew Wang",
+        role1: "Computer Science",
+        role2: "AI/ML Engineering Intern",
+        description: "Incoming CS Senior @ ASU",
         buttonText: "View Profile"
     };
 

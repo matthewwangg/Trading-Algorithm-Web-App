@@ -12,6 +12,7 @@ const StockGraphCard: React.FC<StockGraphCardProps> = ({ headerText, paragraphTe
             <h2 className="stock-graph-card-header">{headerText}</h2>
             <p className="stock-graph-card-paragraph">{paragraphText}</p>
             <div className="stock-graph-placeholder">Stock Price Graph</div>
+            <p className="stock-graph-card-paragraph-2">{paragraphText}</p>
         </div>
     );
 };

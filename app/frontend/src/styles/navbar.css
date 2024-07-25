@@ -13,6 +13,10 @@
     font-weight: bold;
 }
 
+.navbar-links {
+    margin-left: auto;
+}
+
 .navbar-links ul {
     list-style-type: none;
     padding: 0;
@@ -28,10 +32,6 @@
     color: #000000;
     text-decoration: none;
     padding: 8px 12px;
-}
-
-.navbar-links ul li a:hover {
-    text-decoration: underline;
 }
 
 .navbar-search {
