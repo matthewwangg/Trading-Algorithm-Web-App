@@ -4,6 +4,9 @@ import Navbar from "../components/Navbar";
 import FooterSection from "../components/FooterSection";
 import SubscriptionSection from "../components/SubscriptionSection";
 import CollaboratorCard from "../components/CollaboratorCard";
+import StockGraphCardSection from "../components/StockGraphCardSection";
+import WelcomeSection from "../components/WelcomeSection";
+import HeaderTextSection from "../components/HeaderTextSection";
 
 const MetricsPage: React.FC = () => {
     const [data, setData] = useState<string>('');
@@ -37,8 +40,12 @@ const MetricsPage: React.FC = () => {
     return (
         <div>
             <Navbar/>
-            <h1>Visualization Page</h1>
-            <p>{data}</p>
+
+            <WelcomeSection/>
+            <HeaderTextSection headerText={"Stock Visualizations"} middleText={"Here is where the stock visualizations will go."} buttonText={"See More"}/>
+            <StockGraphCardSection headerText={"Placeholder 1"} paragraphText={"Sample Text"}/>
+            <StockGraphCardSection headerText={"Placeholder 2"} paragraphText={"Sample Text"}/>
+
             <SubscriptionSection/>
             <CollaboratorCard
                 name={firstCollaboratorCard.name}
