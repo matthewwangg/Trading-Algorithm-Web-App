@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
+import path from 'path';
 import cors from 'cors';
-import axios, { AxiosRequestConfig, Method } from 'axios';
-import { AxiosRequestHeaders } from 'axios';
+import axios, { AxiosRequestConfig, Method, AxiosRequestHeaders } from 'axios';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -9,8 +9,10 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
+
 app.get('/', (req: Request, res: Response) => {
-    res.send('Welcome to the Home Page');
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
 });
 
 app.get('/metrics', (req: Request, res: Response) => {
@@ -46,6 +48,10 @@ app.all('/proxy/*', async (req: Request, res: Response) => {
             res.status(500).send('Unexpected error');
         }
     }
+});
+
+app.get('*', (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
 });
 
 app.listen(PORT, () => {
