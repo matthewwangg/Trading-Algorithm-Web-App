@@ -38,3 +38,8 @@ def stock_analysis(request):
             return Response({'error': 'File not found. Please check the ticker name or file path.'}, status=status.HTTP_404_NOT_FOUND)
     else:
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+def stock_analysis_alternative():
+    print("Matt's prediction logic will go here")
