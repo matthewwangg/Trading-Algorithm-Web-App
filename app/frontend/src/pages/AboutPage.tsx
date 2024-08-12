@@ -31,10 +31,10 @@ const AboutPage: React.FC = () => {
             />
             <ProjectSection/>
             <ProfileCard
-                name="Test"
-                role1="?"
-                role2="?"
-                description="?"
+                name="Hari Varshan"
+                role1="Computer Science & Mathematics"
+                role2="Data Science Intern"
+                description="CS and Math Senior @ ASU | XR Developer at METEOR Studios"
                 contactText="Contact"
                 githubText="GitHub"
             />

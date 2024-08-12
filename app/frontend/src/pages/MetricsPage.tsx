@@ -20,10 +20,10 @@ const MetricsPage: React.FC = () => {
     };
 
     const secondCollaboratorCard = {
-        name: "Collaborator 2",
-        role1: "Role 1",
-        role2: "Role 2",
-        description: "Description",
+        name: "Hari Varshan",
+        role1: "Computer Science & Mathematics",
+        role2: "Data Science Intern",
+        description: "CS and Math Senior @ ASU | XR Developer at METEOR Studios",
         buttonText: "View Profile"
     };
 
