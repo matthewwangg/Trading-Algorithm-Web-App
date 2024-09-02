@@ -9,6 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 import xgboost as xgb
+import json
 
 @api_view(['POST'])
 def stock_analysis(request):
@@ -50,9 +51,12 @@ def stock_analysis_alternative(request):
     ticker = request.data['ticker']
 
     df = pd.read_csv(ticker + ".csv")
+    df['Previous_Close'] = df['Close'].shift(1)
+    df['Moving_Average'] = df['Close'].rolling(window=5).mean()
+
 
     # Prepare the features and target
-    X = df[['High', 'Low']]
+    X = df[['High', 'Low', 'Moving_Average', 'Previous_Close']]
     y = df['Close']
 
     # Split the data into training and testing sets
@@ -72,5 +76,5 @@ def stock_analysis_alternative(request):
     print(f'XGBoost MSE: {xgb_mse}')
     print(f'XGBoost R2: {xgb_r2}')
 
-    data = {'MSE': f'{xgb_mse}', 'R2': f'{xgb_r2}'}
+    data = {'Predictions': json.dumps(xgb_predictions.tolist()), 'MSE': f'{xgb_mse}', 'R2': f'{xgb_r2}'}
     return JsonResponse(data)
